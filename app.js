@@ -1,7 +1,7 @@
 const express = require("express")
 const path = require('path');
 const app = express()
-const PORT = 5500
+const PORT = process.env.PORT || 5500;
 
 app.get('/', (req, res) => {
     res.send("This is Test API on Firebase.")
